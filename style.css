@@ -1,0 +1,226 @@
+body {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  padding: 15px;
+}
+
+label {
+  font-size: 2em;
+  display: block;
+}
+
+option {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+h1 {
+  text-decoration: underline;
+  text-align: center;
+  font-size: 2em;
+}
+
+.checkwrap{
+  position:static;
+  display:block;
+}
+
+.wrapper {
+  display:inline-block;
+}
+
+.custom-select {
+  /* position: relative; */
+  font-family: Arial;
+}
+
+.custom-select select {
+  display: none;
+  /*hide original SELECT element:*/
+}
+
+.select-selected:after {
+  /* position: absolute; */
+  content: "";
+  top: 14px;
+  right: 10px;
+  width: 0;
+  height: 0;
+  border: 6px solid transparent;
+  border-color: #fff transparent transparent transparent;
+}
+
+/*point the arrow upwards when the select box is open (active):*/
+
+.select-selected.select-arrow-active:after {
+  border-color: transparent transparent #fff transparent;
+  top: 7px;
+}
+
+/*hide the items when the select box is closed:*/
+
+.select-hide {
+  display: none;
+}
+
+.class_checkbox {
+  background: url('form-elements-sprite.png') no-repeat -158px -239px;
+  width: 161px;
+  height: 160px;
+  float: left;
+  margin: 10px;
+  overflow: hidden;
+  zoom: 0.5;
+  -moz-transform: scale(0.5);
+  -moz-transform-origin: 0 0;
+  
+}
+
+.class_checkbox.checked {
+  background: url('form-elements-sprite.png') no-repeat -381px -239px;
+  width: 161px;
+  height: 160px;
+}
+
+/* General dropdown styles */
+
+.dropwrap{
+  clear: both;
+  position:static;
+  display:block;
+}
+
+.dropdown {
+  font-weight: lighter;
+}
+
+.dropdown dd,
+.dropdown dt,
+.dropdown ul {
+  margin: 0px;
+  padding: 0px;
+  width:210px;
+}
+
+.dropdown dd {
+  position: relative;
+  width:210px;
+}
+
+/* DT styles for sliding doors */
+
+.dropdown dt {
+  background: white no-repeat scroll right center;
+  display: block;
+  padding-right: 5px;
+  border: 1px solid #d4ca9a;
+  width: 200px;
+  color: gray;
+  padding-top: 8px;
+  padding-bottom: 8px;
+}
+
+.dropdown dt span {
+  cursor: pointer;
+  /* display: block; */
+  padding: 5px;
+}
+
+/* UL styles */
+
+.dropdown dd ul {
+  background: gray none repeat scroll 0 0;
+  display: none;
+  list-style: none;
+  
+  /* position: absolute; */
+  left: 0px;
+  top: 2px;
+  width: 207px;
+  min-width: 200px;
+}
+
+.dropdown span.value {
+  display: none;
+}
+
+.dropdown dd ul li {
+  padding: 5px;
+  display: block;
+  padding-right: 15px;
+}
+.dropdown dd ul li:hover {
+  opacity: 0.4;
+}
+
+.dropdown dd ul li {
+  
+  display: block;
+}
+
+li:nth-child(odd) {
+  background: lightgrey;
+}
+
+.dropimage {
+  background: url('form-elements-sprite.png') no-repeat -1143px -280px;
+	width: 76px;
+  height: 77px;
+  overflow: hidden;
+  zoom: 0.2;
+  -moz-transform: scale(0.2);
+  -moz-transform-origin: 0 0;
+  float:right;
+}
+
+.dropimage2 {
+  background: url('form-elements-sprite.png') no-repeat -1035px -280px;
+	width: 77px;
+	height: 77px;
+  overflow: hidden;
+  zoom: 0.2;
+  -moz-transform: scale(0.2);
+  -moz-transform-origin: 0 0;
+  float:right;
+  display: none;
+}
+
+
+
+.radiobutton1 .radiobutton-on {
+  background: url('form-elements-sprite.png') no-repeat -812px -242px;
+	width: 168px;
+  height: 166px;
+  float: left;
+}
+
+.radiobutton1 .radiobutton-off {
+  background: url('form-elements-sprite.png') no-repeat -582px -242px;
+	width: 167px;
+  height: 166px;
+  float: left;
+  display: none;
+}
+
+.radiobutton2 .radiobutton-on {
+  background: url('form-elements-sprite.png') no-repeat -812px -242px;
+	width: 168px;
+  height: 166px;
+  float: left;
+  display:none;
+}
+
+.radiobutton2 .radiobutton-off {
+  background: url('form-elements-sprite.png') no-repeat -582px -242px;
+	width: 167px;
+  height: 166px;
+  float: left;
+}
+
+.radiobuttons {
+  height:1000px;
+  width:1000px;
+}
+
+.radiobutton1 .radiobutton2 {
+  height:1000px;
+  width:1000px;
+}
